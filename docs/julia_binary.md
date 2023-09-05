@@ -1,6 +1,10 @@
-Understanding the Julia source and binaries.
+# Motivation
+We don't want the Julia software to seem like a black box.
+We should understand some basics about the Julia source and binaries.
 
-Source: https://github.com/JuliaLang/julia
+
+# Source
+https://github.com/JuliaLang/julia
 
 Some important directories
 
@@ -10,7 +14,9 @@ Some important directories
 - `stdlib` : standard libraries written in Julia
 - `Makefile` : julia is built using GNU Make
 
-Binaries: https://julialang.org/downloads/
+
+# Binaries
+https://julialang.org/downloads/
 
 Download Julia binary for Linux
 
