@@ -16,4 +16,12 @@ println("pid | threadid")
 for (pid, tid) in unique(x)
     println("$pid | $tid")
 end
+
+# Directed acyclic graph
+a = Dagger.@spawn rand(100, 100)
+b = Dagger.@spawn sum(a)
+c = Dagger.@spawn prod(a)
+d = Dagger.@spawn b+c
+println(fetch(d))
+
 rmprocs(workers())
