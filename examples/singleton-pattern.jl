@@ -10,6 +10,7 @@ const singleton = Singleton()
 f(::Singleton) = "singleton"
 f(singleton)
 
+
 # We can use singletons for multiple dispatch
 abstract type S end
 struct S1 <: S end
@@ -20,3 +21,12 @@ f(::Type{S2}) = "dispatch S2"
 
 f(S1)
 f(S2)
+
+
+# Value types are also singletons
+struct Value{T} end
+Value(T) = Value{T}()
+
+f(::Value{T}) where T = T
+f(Value(1))
+
