@@ -36,5 +36,3 @@ julia --project=.
 julia --project=. src/serial.jl
 julia --project=. src/threads.jl
 julia --project=. src/distributed.jl
-julia --project=. src/mpirun.jl
-julia --project=. src/cuda.jl
