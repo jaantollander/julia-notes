@@ -5,9 +5,8 @@ srun --account="project_<id>" --partition=test --nodes=2 --ntasks-per-node=1 --c
 srun --account="project_<id>" --partition=test --nodes=2 --ntasks-per-node=1 --cpus-per-task=128 --mem-per-cpu=0 --time="00:30:00" --pty  bash
 
 # Run interactive session on LUMI
-srun --account="<account>" --partition=bebug --nodes=2 --ntasks-per-node=1 --cpus-per-task=2 --mem-per-cpu=1000 --time="00:30:00" --pty  bash
-
-module use /appl/local/csc/modulefiles  # LUMI only
+#srun --account="<account>" --partition=bebug --nodes=2 --ntasks-per-node=1 --cpus-per-task=2 --mem-per-cpu=1000 --time="00:30:00" --pty  bash
+#module use /appl/local/csc/modulefiles  # LUMI only
 
 # Show Slurm environment variables
 printenv | grep SLURM | less
