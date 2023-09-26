@@ -26,6 +26,9 @@ module show julia/1.9
 # Load Julia module environment
 module load julia/1.9
 
+# List loaded modules
+module list
+
 # Instantiate Julia project
 julia --project=. -e 'using Pkg; Pkg.instantiate()'
 
